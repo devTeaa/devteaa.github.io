@@ -5,7 +5,7 @@ body {
 } */
 
 .bg-image {
-  background-image: url('bg.png');
+  background-image: url('/assets/images/bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,8 +13,12 @@ body {
 
 @media (max-width: 600px) {
   .bg-image {
-    background-image: url('bg-180.png');
+    background-image: url('/assets/images/bg-180.png');
   }
+}
+
+.text-centered {
+  text-align: center;
 }
 
 .img-w3rem {

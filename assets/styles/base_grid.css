@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+}
+
+.grid-c-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-g-1 {
+  grid-gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid-c-2-tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600) {
+  .grid-mobile {
+    grid-template-columns: 1fr;
+  }
+}
