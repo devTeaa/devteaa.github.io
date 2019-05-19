@@ -16,8 +16,8 @@
   }
 }
 
-@media (max-width: 600) {
-  .grid-mobile {
-    grid-template-columns: 1fr;
+@media (max-width: 600px) {
+  .grid-c-1-mobile {
+    grid-template-columns: 1fr !important;
   }
 }
