@@ -197,11 +197,11 @@ export const achievements: Achievement[] = [
   {
     title: 'Published Deep Learning Research',
     description:
-      'Master\'s research applying computer vision and deep learning to agricultural use cases.',
+      'Published a paper on oil palm fruit ripeness classification using an auxiliary learning attention mechanism with DenseNet.',
     bullets: [
-      'Thesis on oil palm fruit ripeness classification.',
-      'Used deep learning and visual attention mechanisms.',
-      'Published research in the field.',
+      'Proposed AuxNet, a DenseNet-based model with attention modules routed to auxiliary classifiers to mitigate vanishing gradients.',
+      'Achieved 87% accuracy on a 7-class oil palm Fresh Fruit Bunch dataset, improving over the base DenseNet.',
+      'Published in ICIC Express Letters, Vol. 17, No. 12, December 2023 (DOI: 10.24507/icicel.17.12.1303).',
     ],
   },
   {
