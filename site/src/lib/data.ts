@@ -192,7 +192,7 @@ export const achievements: Achievement[] = [
   {
     title: 'Custom SSR Framework',
     description:
-      'A real plugin-based SSR framework that drops into existing Vue CSR projects and can be installed and configured via AI agent skills to get developers started with SSR quickly.',
+      'A plugin based SSR framework that drops into existing Vue CSR projects and can be installed and configured via AI agent skills to get developers started with SSR quickly.',
     bullets: [
       'Progressive SSR adoption without rewriting the project.',
       'Renders Vue 2 and Vue 3 side by side during migrations.',
