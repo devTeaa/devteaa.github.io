@@ -4,7 +4,6 @@
   let open = $state(false);
 
   const links = [
-    { label: 'About', href: '#about' },
     { label: 'Experience', href: '#experience' },
     { label: 'Education', href: '#education' },
     { label: 'Skills', href: '#skills' },
