@@ -79,8 +79,7 @@ export const experiences: Job[] = [
       'Maintained and enhanced Jenkins CI/CD pipelines, centralising frontend stack upgrades, dependency maintenance, and deployment workflows.',
       'Configured Nginx API gateways and routing strategies in collaboration with cross-functional engineering teams.',
       'Developed internal engineering tools and led knowledge-sharing sessions to improve team productivity.',
-      'Built monitoring dashboards and distributed tracing for the micro-frontend SSR layer using Datadog.',
-      'Integrated TypeScript types between frontend and backend using OpenAPI specs, reducing API contract mismatches.'
+      'Built monitoring dashboards and distributed tracing for the micro-frontend SSR layer using Datadog.'
     ],
   },
   {
@@ -98,6 +97,7 @@ export const experiences: Job[] = [
       'Designed and implemented seller page banner and layout customization features.',
       'Developed the Official Store seller registration and approval workflow.',
       'Built a broadcast messaging system for seller promotions and campaigns.',
+      'Integrated TypeScript types between frontend and backend using OpenAPI specs, reducing API contract mismatches.',
       'Presented "Functional Vue with Composition and TypeScript" at Blitalk 2021, sharing Vue 2→3 migration practices.',
       'Led the Official Store frontend migration from Vue 2 to Vue 3.',
       'Collaborated with cross-functional teams to deliver end-to-end seller-facing features.',
