@@ -10,16 +10,19 @@
       {#each achievements as item}
         <article class="item" class:no-bullets={item.bullets.length === 0}>
           <div class="lead">
-            <div class="icon"><Icon name={item.icon} size={28} /></div>
             {#if item.href}
               <h3>
                 <a href={item.href} target="_blank" rel="noreferrer">
+                  <Icon name={item.icon} size={20} />
                   {item.title}
                   <Icon name="link" size={16} />
                 </a>
               </h3>
             {:else}
-              <h3>{item.title}</h3>
+              <h3>
+                <Icon name={item.icon} size={20} />
+                {item.title}
+              </h3>
             {/if}
             <p class="description">{item.description}</p>
           </div>
@@ -80,23 +83,19 @@
     gap: 0.5rem;
   }
 
-  .icon {
-    color: var(--accent);
-    margin-bottom: 0.25rem;
-  }
-
   h3 {
     font-size: 1.1rem;
     margin: 0;
     color: var(--accent);
   }
 
+  h3,
   h3 a {
     color: inherit;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.5rem;
   }
 
   h3 a:hover {
