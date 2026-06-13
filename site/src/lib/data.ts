@@ -234,7 +234,7 @@ export const achievements: Achievement[] = [
   },
   {
     title: 'Enterprise CMS',
-    description: 'Led a CMS project for an internal company portal built with .NET MVC, vanilla JavaScript for DOM rendering, Entity Framework, and deployed on Azure.',
+    description: 'Led a CMS project for an internal company portal built with .NET MVC, vanilla JavaScript for DOM rendering, Entity Framework, Microsoft SQL Server, and deployed on Azure.',
     bullets: [
       'News management, project dashboards, and event calendars.',
       'Secure file sharing with session-based watermarking.',
