@@ -79,7 +79,8 @@ export const experiences: Job[] = [
       'Maintained and enhanced Jenkins CI/CD pipelines, centralising frontend stack upgrades, dependency maintenance, and deployment workflows.',
       'Configured Nginx API gateways and routing strategies in collaboration with cross-functional engineering teams.',
       'Developed internal engineering tools and led knowledge-sharing sessions to improve team productivity.',
-      'Built monitoring dashboards and distributed tracing for the micro-frontend SSR layer using Datadog.'
+      'Built monitoring dashboards and distributed tracing for the micro-frontend SSR layer using Datadog.',
+      'Integrated TypeScript types between frontend and backend using OpenAPI specs, reducing API contract mismatches.'
     ],
   },
   {
