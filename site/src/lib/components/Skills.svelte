@@ -9,11 +9,11 @@
       {#each skillGroups as group}
         <div class="group">
           <h3>{group.name}</h3>
-          <div class="tags">
+          <ul class="tags">
             {#each group.skills as skill}
-              <span class="tag">{skill}</span>
+              <li class="tag">{skill}</li>
             {/each}
-          </div>
+          </ul>
         </div>
       {/each}
     </div>
@@ -54,7 +54,7 @@
   }
 
   .tag {
-    display: inline-block;
+    display: inline-flex;
     padding: 0.45rem 0.85rem;
     border-radius: 999px;
     background: var(--surface);

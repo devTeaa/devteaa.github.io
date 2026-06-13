@@ -38,6 +38,7 @@
       class="menu-toggle"
       aria-label="Toggle menu"
       aria-expanded={open}
+      aria-controls="mobile-menu"
       onclick={() => open = !open}
     >
       <Icon name={open ? 'close' : 'menu'} size={24} />
@@ -45,7 +46,7 @@
   </div>
 
   {#if open}
-    <nav class="mobile-nav" aria-label="Mobile">
+    <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile">
       {#each links as link}
         <a href={link.href} onclick={(e) => { e.preventDefault(); scrollToId(link.href); }}>
           {link.label}

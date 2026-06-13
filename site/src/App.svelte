@@ -9,8 +9,9 @@
   import Footer from './lib/components/Footer.svelte';
 </script>
 
+<a class="skip-link" href="#main">Skip to main content</a>
 <Header />
-<main>
+<main id="main">
   <Hero />
   <Highlights />
   <Experience />
