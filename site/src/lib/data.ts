@@ -43,7 +43,7 @@ export const profile = {
   title: 'Software Design Engineer',
   location: 'Jakarta, Indonesia',
   summary:
-    "I'm Herman, a Software Design Engineer with 7+ years building scalable frontend systems for high-traffic e-commerce. I specialize in web performance, micro-frontend architecture, and CI/CD — from leading a custom SSR framework at Blibli.com to driving stack modernisation such as Vue 2→3 and Webpack→Vite. Across my career I've worked across the full product lifecycle, from enterprise internal portals at Pertamina to high-traffic e-commerce frontends at Blibli.com. I care about rendering strategy, micro-frontend boundaries, deployment pipelines, and production observability. My master's research in computer vision and deep learning taught me to approach complex problems methodically, and I bring that same mindset to frontend architecture: whether it's shaving seconds off page loads or designing systems that scale across teams.",
+    "I'm Herman, a Software Design Engineer with 7+ years building scalable frontend systems for high-traffic e-commerce. I specialize in web performance, server-side rendering, and CI/CD — from leading a custom SSR framework that supports Blibli.com's micro-frontend architecture to driving stack modernisation such as Vue 2→3 and Webpack→Vite. Across my career I've worked across the full product lifecycle, from enterprise internal portals at Pertamina to high-traffic e-commerce frontends at Blibli.com. I care about rendering strategy, micro-frontend boundaries, deployment pipelines, and production observability. My master's research in computer vision and deep learning taught me to approach complex problems methodically, and I bring that same mindset to frontend architecture: whether it's shaving seconds off page loads or designing systems that scale across teams.",
   resumeUrl: '/Herman-2026-ATS.pdf',
 };
 
@@ -76,11 +76,11 @@ export const experiences: Job[] = [
       { title: 'Associate Software Design Engineer (Official Store)', period: 'Sep 2019 - Aug 2021' },
     ],
     highlights: [
-      'Architected a custom Node.js SSR framework supporting micro-frontend architecture with SSR, ISR, and PPR rendering strategies to overcome the limitations of existing meta-frameworks and improve web performance.',
+      'Architected a custom Node.js SSR framework that supports Blibli.com\'s micro-frontend architecture, enabling SSR, ISR, and PPR rendering strategies to overcome the limitations of existing meta-frameworks and improve web performance.',
       'Maintained and enhanced Jenkins CI/CD pipelines, centralising frontend stack upgrades, dependency maintenance, and deployment workflows.',
       'Configured Nginx API gateways and routing strategies in collaboration with cross-functional engineering teams.',
       'Developed internal engineering tools and led knowledge-sharing sessions to improve team productivity.',
-      'Built monitoring dashboards and distributed tracing for micro-frontend SSR services using Datadog.',
+      'Built monitoring dashboards and distributed tracing for the micro-frontend SSR layer using Datadog.'
     ],
   },
   {
@@ -144,7 +144,7 @@ export const skillGroups: SkillGroup[] = [
       'JavaScript (ES6+)',
       'HTML5',
       'CSS3',
-      'Micro-frontends',
+      'Micro-frontend SSR',
       'Nuxt',
     ],
   },
@@ -190,7 +190,7 @@ export const achievements: Achievement[] = [
   {
     title: 'Custom SSR Framework',
     description:
-      'Architected a custom Node.js SSR framework supporting micro-frontend architecture with SSR, ISR, and PPR rendering strategies. Built to overcome the limitations of existing meta-frameworks and power high-traffic, high-performance e-commerce experiences at Blibli.com.',
+      'Architected a custom Node.js SSR framework that supports Blibli.com\'s micro-frontend architecture, enabling SSR, ISR, and PPR rendering strategies. Built to overcome the limitations of existing meta-frameworks and power high-traffic, high-performance e-commerce experiences at Blibli.com.',
   },
   {
     title: 'Published Deep Learning Research',
