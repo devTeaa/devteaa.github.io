@@ -192,8 +192,13 @@ export const achievements: Achievement[] = [
   {
     title: 'Custom SSR Framework',
     description:
-      `A plugin-based SSR system that drops into existing Vue CSR projects via AI agent skills, so teams can adopt SSR progressively without a rewrite. It can render Vue 2 and Vue 3 side by side during migrations, requires only config declarations with no implementation code, and automatically wires up Express and SSR. It's also resource-efficient: no Vue rendering happens at request time, using ISR for static pages, PPR for dynamic pages, and island architecture (like Astro) to strip unused chunks from static components.`,
-    bullets: [],
+      'A plugin-based SSR system that drops into existing Vue CSR projects via AI agent skills.',
+    bullets: [
+      'Progressive SSR adoption without rewriting the project.',
+      'Renders Vue 2 and Vue 3 side by side during migrations.',
+      'Config-driven setup with no implementation code; library auto-wires Express / SSR.',
+      'Resource-efficient rendering using ISR, PPR, and island architecture like Astro.',
+    ],
   },
   {
     title: 'Published Deep Learning Research',
