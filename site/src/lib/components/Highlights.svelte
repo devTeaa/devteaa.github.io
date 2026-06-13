@@ -1,5 +1,6 @@
 <script lang="ts">
   import { achievements } from '../data';
+  import Icon from './Icon.svelte';
 </script>
 
 <section id="highlights" class="highlights">
@@ -11,7 +12,10 @@
           <div class="lead">
             {#if item.href}
               <h3>
-                <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  {item.title}
+                  <Icon name="link" size={16} />
+                </a>
               </h3>
             {:else}
               <h3>{item.title}</h3>
@@ -84,6 +88,9 @@
   h3 a {
     color: inherit;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
   }
 
   h3 a:hover {
