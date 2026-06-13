@@ -1,5 +1,6 @@
 <script lang="ts">
   import { educations } from '../data';
+  import Icon from './Icon.svelte';
 </script>
 
 <section id="education" class="education">
@@ -17,7 +18,17 @@
           </div>
           <p class="period">{edu.location} · {edu.period}</p>
           {#if edu.thesis}
-            <p class="thesis"><strong>Thesis:</strong> {edu.thesis}</p>
+            <p class="thesis">
+              <strong>Thesis:</strong>
+              {#if edu.href}
+                <a href={edu.href} target="_blank" rel="noreferrer">
+                  {edu.thesis}
+                  <Icon name="link" size={14} />
+                </a>
+              {:else}
+                {edu.thesis}
+              {/if}
+            </p>
           {/if}
         </article>
       {/each}
@@ -103,6 +114,18 @@
     font-size: 0.95rem;
     line-height: 1.6;
     margin: 0;
+  }
+
+  .thesis a {
+    color: var(--accent);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  .thesis a:hover {
+    text-decoration: underline;
   }
 
   @media (max-width: 768px) {

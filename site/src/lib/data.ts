@@ -26,6 +26,7 @@ export interface Education {
   degree: string;
   gpa: string;
   thesis?: string;
+  href?: string;
 }
 
 export interface SkillGroup {
@@ -141,6 +142,7 @@ export const educations: Education[] = [
     gpa: '3.60/4.00',
     thesis:
       'Oil Palm Fruit Image Ripeness Classification with Computer Vision using Deep Learning and Visual Attention',
+    href: 'https://www.researchgate.net/publication/376166986_DEEP_LEARNING_WITH_AUXILIARY_LEARNING_ATTENTION_MECHANISM_FOR_OIL_PALM_FRUIT_IMAGE_RIPENESS_CLASSIFICATION',
   },
   {
     school: 'Sekolah Tinggi Teknologi Indonesia',
