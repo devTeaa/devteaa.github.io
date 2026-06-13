@@ -1,0 +1,165 @@
+export interface Contact {
+  label: string;
+  value: string;
+  href: string;
+  icon: 'phone' | 'email' | 'linkedin' | 'github' | 'download' | 'arrow';
+}
+
+export interface Job {
+  company: string;
+  location: string;
+  period: string;
+  role: string;
+  type: string;
+  highlights: string[];
+}
+
+export interface Education {
+  school: string;
+  location: string;
+  period: string;
+  degree: string;
+  gpa: string;
+  thesis?: string;
+}
+
+export interface SkillGroup {
+  name: string;
+  skills: string[];
+}
+
+export const profile = {
+  name: 'Herman',
+  title: 'Software Design Engineer',
+  location: 'Jakarta, Indonesia',
+  summary:
+    'Software Design Engineer with 7+ years building product features and architecting scalable frontend systems for high-traffic e-commerce platforms. Specialized in web performance, micro-frontend architectures, and CI/CD optimization, including creating a custom framework solution to overcome the limitations of existing meta-frameworks. Master\'s in Computer Science with published research in Deep Learning and Computer Vision.',
+  resumeUrl: '/Herman-2026-ATS.pdf',
+};
+
+export const contacts: Contact[] = [
+  {
+    label: 'LinkedIn',
+    value: 'linkedin.com/in/herman-h-8b9b49186',
+    href: 'https://www.linkedin.com/in/herman-h-8b9b49186/',
+    icon: 'linkedin',
+  },
+  {
+    label: 'GitHub',
+    value: 'github.com/devteaa',
+    href: 'https://github.com/devteaa',
+    icon: 'github',
+  },
+];
+
+export const experiences: Job[] = [
+  {
+    company: 'PT. Global Digital Niaga (Blibli.com)',
+    location: 'Jakarta, Indonesia',
+    period: 'Sep 2019 - Present',
+    role: 'Software Design Engineer',
+    type: 'E-commerce',
+    highlights: [
+      'Architected a custom Node.js SSR framework supporting micro-frontend architecture with SSR, ISR, and PPR rendering strategies to overcome the limitations of existing meta-frameworks and improve web performance.',
+      'Maintained and enhanced Jenkins CI/CD pipelines, centralising frontend stack upgrades, dependency maintenance, and deployment workflows.',
+      'Configured Nginx API gateways and routing strategies in collaboration with cross-functional engineering teams.',
+      'Developed internal engineering tools and led knowledge-sharing sessions to improve team productivity.',
+      'Built monitoring dashboards and distributed tracing for micro-frontend SSR services using Datadog.',
+    ],
+  },
+  {
+    company: 'Kairos Utama Indonesia',
+    location: 'Jakarta, Indonesia',
+    period: 'Jun 2018 - Aug 2019',
+    role: 'Junior Software Programmer',
+    type: 'Software House',
+    highlights: [
+      'Architected and developed enterprise internal portal solutions for Pertamina using ASP.NET MVC and .NET Framework.',
+      'Implemented dynamic rendering architecture combining server-rendered shell templates with vanilla JavaScript DOM interactions.',
+      'Built backend business logic using .NET Framework and Entity Framework, including DTO generation and database schema maintenance.',
+      'Contributed to Indonesia gas station standardization and certification systems with cross-functional teams.',
+      'Led a CMS project for the internal company portal, delivering features such as news management, project dashboards, event calendars, secure file sharing with session-based watermarking, org hierarchy visualization, and media file explorer, enabling non-technical teams to manage content independently.',
+    ],
+  },
+];
+
+export const educations: Education[] = [
+  {
+    school: 'Universitas Bina Nusantara',
+    location: 'Jakarta, Indonesia',
+    period: 'Jul 2018 - Dec 2019',
+    degree: 'Master of Computer Science',
+    gpa: '3.60/4.00',
+    thesis:
+      'Oil Palm Fruit Image Ripeness Classification with Computer Vision using Deep Learning and Visual Attention',
+  },
+  {
+    school: 'Sekolah Tinggi Teknologi Indonesia',
+    location: 'Tanjungpinang, Indonesia',
+    period: 'Jul 2014 - Dec 2017',
+    degree: 'Bachelor of Computer Science',
+    gpa: '3.33/4.00',
+    thesis:
+      'Thesis Defence Auto Scheduler using Greedy Algorithm for Sekolah Tinggi Teknologi Indonesia',
+  },
+];
+
+export const skillGroups: SkillGroup[] = [
+  {
+    name: 'Frontend & Architecture',
+    skills: [
+      'Vue.js',
+      'Svelte',
+      'React',
+      'Node.js',
+      'TypeScript',
+      'JavaScript (ES6+)',
+      'HTML5',
+      'CSS3',
+      'Micro-frontends',
+      'Nuxt',
+    ],
+  },
+  {
+    name: 'Backend & Data',
+    skills: [
+      'ASP.NET MVC',
+      '.NET Framework',
+      'Entity Framework',
+      'SQL',
+      'Prisma ORM',
+    ],
+  },
+  {
+    name: 'DevOps & Platform',
+    skills: [
+      'Jenkins',
+      'CI/CD Pipelines',
+      'Datadog',
+      'Distributed Tracing',
+      'NGINX',
+      'API Gateway Configuration',
+      'Google Cloud Platform',
+    ],
+  },
+  {
+    name: 'Machine Learning',
+    skills: [
+      'Computer Vision',
+      'Deep Learning',
+      'Visual Attention Mechanisms',
+      'Python',
+      'PyTorch',
+    ],
+  },
+  {
+    name: 'Testing & Tools',
+    skills: ['Playwright'],
+  },
+];
+
+export const achievements = [
+  'Published master\'s thesis on oil palm fruit ripeness classification using deep learning and visual attention.',
+  'Architected a custom SSR framework to bypass the limitations of existing meta-frameworks and power high-traffic, high-performance e-commerce experiences at Blibli.com.',
+  'Led a CMS project for an internal company portal, delivering features such as news management, project dashboards, event calendars, secure file sharing with session-based watermarking, org hierarchy visualization, and media file explorer, enabling non-technical teams to manage content independently.',
+];
