@@ -10,6 +10,7 @@
       {#each achievements as item}
         <article class="item" class:no-bullets={item.bullets.length === 0}>
           <div class="lead">
+            <div class="icon"><Icon name={item.icon} size={28} /></div>
             {#if item.href}
               <h3>
                 <a href={item.href} target="_blank" rel="noreferrer">
@@ -77,6 +78,11 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .icon {
+    color: var(--accent);
+    margin-bottom: 0.25rem;
   }
 
   h3 {

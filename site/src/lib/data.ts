@@ -37,6 +37,7 @@ export interface Achievement {
   title: string;
   description: string;
   bullets: string[];
+  icon: 'server' | 'book' | 'mic' | 'code' | 'dashboard';
   href?: string;
 }
 
@@ -219,6 +220,7 @@ export const skillGroups: SkillGroup[] = [
 export const achievements: Achievement[] = [
   {
     title: 'Custom SSR Framework',
+    icon: 'server',
     description:
       'A plugin based SSR framework that drops into existing Vue CSR projects and can be installed and configured via AI agent skills to get developers started with SSR quickly.',
     bullets: [
@@ -230,6 +232,7 @@ export const achievements: Achievement[] = [
   },
   {
     title: 'Published Deep Learning Research',
+    icon: 'book',
     description:
       'Published a paper on oil palm fruit ripeness classification using an auxiliary learning attention mechanism with DenseNet.',
     bullets: [
@@ -241,6 +244,7 @@ export const achievements: Achievement[] = [
   },
   {
     title: 'Blitalk Speaker 2021',
+    icon: 'mic',
     description:
       'Presented "Functional Vue with Composition and TypeScript" at Blitalk 2021, sharing how Blibli.com migrated from Vue Options API / mixins to the Composition API.',
     bullets: [
@@ -252,6 +256,7 @@ export const achievements: Achievement[] = [
   },
   {
     title: 'OpenAPI Type Generation',
+    icon: 'code',
     description:
       'Built an open-source CLI tool that generates TypeScript types from OpenAPI specs, keeping frontend and backend type definitions in sync.',
     bullets: [
@@ -262,6 +267,7 @@ export const achievements: Achievement[] = [
   },
   {
     title: 'Enterprise CMS',
+    icon: 'dashboard',
     description: 'Led a CMS project for an internal company portal built with .NET MVC, vanilla JavaScript for DOM rendering, Entity Framework, Microsoft SQL Server, and deployed on Azure.',
     bullets: [
       'News management, project dashboards, and event calendars.',
