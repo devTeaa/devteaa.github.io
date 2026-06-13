@@ -40,10 +40,8 @@
         </a>
       {/each}
     </div>
-  </div>
 
-  <div class="hero-detail container">
-    <div class="intro">
+    <div class="story">
       <p>
         Over the past 7+ years I’ve worked across the full product lifecycle — from enterprise
         internal portals at Pertamina to high-traffic e-commerce frontends at Blibli.com. I care
@@ -165,18 +163,19 @@
     color: var(--accent);
   }
 
-  .hero-detail {
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-  }
-
-  .intro {
+  .story {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    max-width: 720px;
+    margin-top: 2.5rem;
     color: var(--muted);
     line-height: 1.7;
     font-size: 1.05rem;
+  }
+
+  .story p {
+    margin: 0;
   }
 
   @media (max-width: 768px) {
