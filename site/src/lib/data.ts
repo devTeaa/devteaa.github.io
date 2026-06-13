@@ -33,12 +33,17 @@ export interface SkillGroup {
   skills: string[];
 }
 
+export interface Achievement {
+  title: string;
+  description: string;
+}
+
 export const profile = {
   name: 'Herman',
   title: 'Software Design Engineer',
   location: 'Jakarta, Indonesia',
   summary:
-    'Software Design Engineer with 7+ years building product features and architecting scalable frontend systems for high-traffic e-commerce platforms. Specialized in web performance, micro-frontend architectures, and CI/CD optimization, including creating a custom framework solution to overcome the limitations of existing meta-frameworks. Master\'s in Computer Science with published research in Deep Learning and Computer Vision.',
+    'Software Design Engineer with 7+ years building product features and scalable frontend systems for high-traffic e-commerce. I specialize in web performance, micro-frontend architecture, and CI/CD — from leading a custom SSR framework at Blibli.com to driving stack modernisation such as Vue 2→3 and Webpack→Vite.',
   resumeUrl: '/Herman-2026-ATS.pdf',
 };
 
@@ -181,8 +186,20 @@ export const skillGroups: SkillGroup[] = [
   },
 ];
 
-export const achievements = [
-  'Published master\'s thesis on oil palm fruit ripeness classification using deep learning and visual attention.',
-  'Architected a custom SSR framework to bypass the limitations of existing meta-frameworks and power high-traffic, high-performance e-commerce experiences at Blibli.com.',
-  'Led a CMS project for an internal company portal, delivering features such as news management, project dashboards, event calendars, secure file sharing with session-based watermarking, org hierarchy visualization, and media file explorer, enabling non-technical teams to manage content independently.',
+export const achievements: Achievement[] = [
+  {
+    title: 'Custom SSR Framework',
+    description:
+      'Architected a custom Node.js SSR framework supporting micro-frontend architecture with SSR, ISR, and PPR rendering strategies. Built to overcome the limitations of existing meta-frameworks and power high-traffic, high-performance e-commerce experiences at Blibli.com.',
+  },
+  {
+    title: 'Published Deep Learning Research',
+    description:
+      'Published master\'s thesis on oil palm fruit ripeness classification using computer vision, deep learning, and visual attention mechanisms.',
+  },
+  {
+    title: 'Enterprise CMS',
+    description:
+      'Led a CMS project for an internal company portal, delivering news management, project dashboards, event calendars, secure file sharing with session-based watermarking, org hierarchy visualization, and a media file explorer — enabling non-technical teams to manage content independently.',
+  },
 ];

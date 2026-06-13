@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { achievements } from '../data';
+  import { profile, achievements } from '../data';
 </script>
 
 <section id="about" class="about">
@@ -8,25 +8,30 @@
     <div class="grid">
       <div class="intro">
         <p>
-          Over the past 7+ years I've built multiple enterprise projects on the .NET stack, now
-          developing products for an e-commerce platform — from internal platforms at Pertamina to
-          high-traffic e-commerce frontends at Blibli.com. I care about the full lifecycle of a product — from rendering
-          strategy and micro-frontend boundaries to deployment pipelines and production
+          {profile.summary}
+        </p>
+        <p>
+          Over the past 7+ years I’ve worked across the full product lifecycle — from enterprise
+          internal portals at Pertamina to high-traffic e-commerce frontends at Blibli.com. I care
+          about rendering strategy, micro-frontend boundaries, deployment pipelines, and production
           observability.
         </p>
         <p>
-          My master's research in computer vision and deep learning taught me to approach complex
+          My master’s research in computer vision and deep learning taught me to approach complex
           problems methodically, and I bring that same mindset to frontend architecture: whether
-          it's shaving seconds off page loads or designing systems that scale across teams.
+          it’s shaving seconds off page loads or designing systems that scale across teams.
         </p>
       </div>
       <div class="achievements">
         <h3>Highlights</h3>
-        <ul>
+        <div class="cards">
           {#each achievements as item}
-            <li>{item}</li>
+            <article class="card">
+              <h4>{item.title}</h4>
+              <p>{item.description}</p>
+            </article>
           {/each}
-        </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -55,6 +60,12 @@
     color: var(--heading);
   }
 
+  h4 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+    color: var(--heading);
+  }
+
   .grid {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
@@ -70,31 +81,28 @@
     font-size: 1.05rem;
   }
 
-  .achievements ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  .cards {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
-  .achievements li {
-    position: relative;
-    padding-left: 1.5rem;
-    color: var(--muted);
-    line-height: 1.6;
+  .card {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
   }
 
-  .achievements li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0.45rem;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background: var(--accent);
+  .card h4 {
+    color: var(--accent);
+  }
+
+  .card p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+    font-size: 0.95rem;
   }
 
   @media (max-width: 768px) {
