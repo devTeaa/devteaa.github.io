@@ -68,14 +68,11 @@ export const experiences: Job[] = [
   {
     company: 'PT. Global Digital Niaga (Blibli.com)',
     location: 'Jakarta, Indonesia',
-    period: 'Sep 2019 - Present',
+    period: 'Sep 2023 - Present',
     type: 'E-commerce',
     roles: [
       { title: 'Software Design Engineer (RnD)', period: 'May 2026 - Present' },
       { title: 'Senior Software Design Engineer (RnD)', period: 'Sep 2023 - Apr 2026' },
-      { title: 'Senior Software Design Engineer (Official Store)', period: 'Mar 2023 - Aug 2023' },
-      { title: 'Software Design Engineer (Official Store)', period: 'Sep 2021 - Feb 2023' },
-      { title: 'Associate Software Design Engineer (Official Store)', period: 'Sep 2019 - Aug 2021' },
     ],
     highlights: [
       'Architected a custom Node.js SSR framework that supports Blibli.com\'s micro-frontend architecture, enabling SSR, ISR, and PPR rendering strategies to overcome the limitations of existing meta-frameworks and improve web performance.',
@@ -83,6 +80,22 @@ export const experiences: Job[] = [
       'Configured Nginx API gateways and routing strategies in collaboration with cross-functional engineering teams.',
       'Developed internal engineering tools and led knowledge-sharing sessions to improve team productivity.',
       'Built monitoring dashboards and distributed tracing for the micro-frontend SSR layer using Datadog.'
+    ],
+  },
+  {
+    company: 'PT. Global Digital Niaga (Blibli.com)',
+    location: 'Jakarta, Indonesia',
+    period: 'Sep 2019 - Aug 2023',
+    type: 'E-commerce',
+    roles: [
+      { title: 'Senior Software Design Engineer (Official Store)', period: 'Mar 2023 - Aug 2023' },
+      { title: 'Software Design Engineer (Official Store)', period: 'Sep 2021 - Feb 2023' },
+      { title: 'Associate Software Design Engineer (Official Store)', period: 'Sep 2019 - Aug 2021' },
+    ],
+    highlights: [
+      'Analytics for seller performance.',
+      'Seller page banner and layout.',
+      'Official Store seller registration and approval.',
     ],
   },
   {
