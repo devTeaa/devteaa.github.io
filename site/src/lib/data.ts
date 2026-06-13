@@ -36,6 +36,7 @@ export interface SkillGroup {
 export interface Achievement {
   title: string;
   description: string;
+  bullets: string[];
 }
 
 export const profile = {
@@ -190,16 +191,31 @@ export const achievements: Achievement[] = [
   {
     title: 'Custom SSR Framework',
     description:
-      'Architected a custom Node.js SSR framework that supports Blibli.com\'s micro-frontend architecture, enabling SSR, ISR, and PPR rendering strategies. Built to overcome the limitations of existing meta-frameworks and power high-traffic, high-performance e-commerce experiences at Blibli.com.',
+      'Built the SSR rendering layer that powers Blibli.com\'s micro-frontend platform.',
+    bullets: [
+      'Custom Node.js SSR framework enabling SSR, ISR, and PPR rendering strategies.',
+      'Supports the existing micro-frontend architecture without replacing it.',
+      'Overcame limitations of existing meta-frameworks to improve web performance.',
+    ],
   },
   {
     title: 'Published Deep Learning Research',
     description:
-      'Published master\'s thesis on oil palm fruit ripeness classification using computer vision, deep learning, and visual attention mechanisms.',
+      'Master\'s research applying computer vision and deep learning to agricultural use cases.',
+    bullets: [
+      'Thesis on oil palm fruit ripeness classification.',
+      'Used deep learning and visual attention mechanisms.',
+      'Published research in the field.',
+    ],
   },
   {
     title: 'Enterprise CMS',
-    description:
-      'Led a CMS project for an internal company portal, delivering news management, project dashboards, event calendars, secure file sharing with session-based watermarking, org hierarchy visualization, and a media file explorer — enabling non-technical teams to manage content independently.',
+    description: 'Led a CMS project for an internal company portal.',
+    bullets: [
+      'News management, project dashboards, and event calendars.',
+      'Secure file sharing with session-based watermarking.',
+      'Org hierarchy visualization and media file explorer.',
+      'Enabled non-technical teams to manage content independently.',
+    ],
   },
 ];

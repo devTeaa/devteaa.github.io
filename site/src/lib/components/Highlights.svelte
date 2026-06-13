@@ -9,7 +9,14 @@
       {#each achievements as item}
         <article class="card">
           <h3>{item.title}</h3>
-          <p>{item.description}</p>
+          <p class="description">{item.description}</p>
+          {#if item.bullets.length}
+            <ul>
+              {#each item.bullets as bullet}
+                <li>{bullet}</li>
+              {/each}
+            </ul>
+          {/if}
         </article>
       {/each}
     </div>
@@ -34,15 +41,16 @@
   }
 
   h3 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     margin: 0 0 0.5rem;
-    color: var(--heading);
+    color: var(--accent);
   }
 
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
+    align-items: start;
   }
 
   .card {
@@ -52,15 +60,36 @@
     padding: 1.5rem;
   }
 
-  .card h3 {
-    color: var(--accent);
-  }
-
-  .card p {
-    margin: 0;
+  .description {
+    margin: 0 0 1rem;
     color: var(--muted);
     line-height: 1.6;
     font-size: 0.95rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  li {
+    position: relative;
+    padding-left: 1.1rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
   }
 
   @media (max-width: 900px) {
