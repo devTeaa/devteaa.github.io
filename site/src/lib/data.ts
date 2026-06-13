@@ -192,6 +192,10 @@ export const skillGroups: SkillGroup[] = [
     name: 'Testing & Tools',
     skills: ['Vite', 'Jest', 'Unit Testing', 'Integration Testing', 'Playwright'],
   },
+  {
+    name: 'Development Tools',
+    skills: ['GitHub', 'Stash', 'Bitbucket', 'Figma', 'Jira', 'Confluence'],
+  },
 ];
 
 export const achievements: Achievement[] = [
