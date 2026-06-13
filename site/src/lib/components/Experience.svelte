@@ -13,8 +13,15 @@
             <span class="type">{job.type}</span>
           </div>
           <div class="content">
-            <h3>{job.role}</h3>
             <p class="company">{job.company} · {job.location}</p>
+            <div class="roles">
+              {#each job.roles as role}
+                <div class="role">
+                  <h3>{role.title}</h3>
+                  <span class="role-period">{role.period}</span>
+                </div>
+              {/each}
+            </div>
             <ul>
               {#each job.highlights as highlight}
                 <li>{highlight}</li>
@@ -92,6 +99,24 @@
     color: var(--muted);
     font-size: 0.95rem;
     margin-bottom: 1rem;
+  }
+
+  .roles {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .role {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .role-period {
+    font-size: 0.85rem;
+    color: var(--muted);
   }
 
   ul {

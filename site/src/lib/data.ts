@@ -5,12 +5,17 @@ export interface Contact {
   icon: 'phone' | 'email' | 'linkedin' | 'github' | 'download' | 'arrow';
 }
 
+export interface Role {
+  title: string;
+  period: string;
+}
+
 export interface Job {
   company: string;
   location: string;
   period: string;
-  role: string;
   type: string;
+  roles: Role[];
   highlights: string[];
 }
 
@@ -57,8 +62,14 @@ export const experiences: Job[] = [
     company: 'PT. Global Digital Niaga (Blibli.com)',
     location: 'Jakarta, Indonesia',
     period: 'Sep 2019 - Present',
-    role: 'Software Design Engineer',
     type: 'E-commerce',
+    roles: [
+      { title: 'Software Design Engineer (RnD)', period: 'May 2026 - Present' },
+      { title: 'Senior Software Design Engineer (RnD)', period: 'Sep 2023 - Apr 2026' },
+      { title: 'Senior Software Design Engineer (Official Store)', period: 'Mar 2023 - Aug 2023' },
+      { title: 'Software Design Engineer (Official Store)', period: 'Sep 2021 - Feb 2023' },
+      { title: 'Associate Software Design Engineer (Official Store)', period: 'Sep 2019 - Aug 2021' },
+    ],
     highlights: [
       'Architected a custom Node.js SSR framework supporting micro-frontend architecture with SSR, ISR, and PPR rendering strategies to overcome the limitations of existing meta-frameworks and improve web performance.',
       'Maintained and enhanced Jenkins CI/CD pipelines, centralising frontend stack upgrades, dependency maintenance, and deployment workflows.',
@@ -71,8 +82,8 @@ export const experiences: Job[] = [
     company: 'Kairos Utama Indonesia',
     location: 'Jakarta, Indonesia',
     period: 'Jun 2018 - Aug 2019',
-    role: 'Junior Software Programmer',
     type: 'Software House',
+    roles: [{ title: 'Junior Web Developer', period: 'Jun 2018 - Aug 2019' }],
     highlights: [
       'Architected and developed enterprise internal portal solutions for Pertamina using ASP.NET MVC and .NET Framework.',
       'Implemented dynamic rendering architecture combining server-rendered shell templates with vanilla JavaScript DOM interactions.',
@@ -81,13 +92,25 @@ export const experiences: Job[] = [
       'Led a CMS project for the internal company portal, delivering features such as news management, project dashboards, event calendars, secure file sharing with session-based watermarking, org hierarchy visualization, and media file explorer, enabling non-technical teams to manage content independently.',
     ],
   },
+  {
+    company: 'Mediatech',
+    location: 'Tanjungpinang, Indonesia',
+    period: 'May 2014 - Feb 2018',
+    type: 'IT Services',
+    roles: [{ title: 'IT Support Technician', period: 'May 2014 - Feb 2018' }],
+    highlights: [
+      'Provided hardware, software, and network support for clients across multiple locations.',
+      'Installed, configured, and maintained computer systems, printers, and network infrastructure.',
+      'Troubleshot technical issues and delivered user training to improve operational uptime.',
+    ],
+  },
 ];
 
 export const educations: Education[] = [
   {
     school: 'Universitas Bina Nusantara',
     location: 'Jakarta, Indonesia',
-    period: 'Jul 2018 - Dec 2019',
+    period: '2018 - Dec 2020',
     degree: 'Master of Computer Science',
     gpa: '3.60/4.00',
     thesis:
@@ -96,7 +119,7 @@ export const educations: Education[] = [
   {
     school: 'Sekolah Tinggi Teknologi Indonesia',
     location: 'Tanjungpinang, Indonesia',
-    period: 'Jul 2014 - Dec 2017',
+    period: '2014 - 2017',
     degree: 'Bachelor of Computer Science',
     gpa: '3.33/4.00',
     thesis:
