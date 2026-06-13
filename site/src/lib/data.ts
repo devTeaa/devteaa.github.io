@@ -184,7 +184,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     name: 'Testing & Tools',
-    skills: ['Playwright'],
+    skills: ['Vite', 'Jest', 'Unit Testing', 'Integration Testing', 'Playwright'],
   },
 ];
 
