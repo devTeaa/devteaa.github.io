@@ -42,33 +42,30 @@
     </div>
   </div>
 
-  <div class="about-panel">
-    <div class="container">
-      <h2>About me</h2>
-      <div class="grid">
-        <div class="intro">
-          <p>
-            Over the past 7+ years I’ve worked across the full product lifecycle — from enterprise
-            internal portals at Pertamina to high-traffic e-commerce frontends at Blibli.com. I care
-            about rendering strategy, micro-frontend boundaries, deployment pipelines, and production
-            observability.
-          </p>
-          <p>
-            My master’s research in computer vision and deep learning taught me to approach complex
-            problems methodically, and I bring that same mindset to frontend architecture: whether
-            it’s shaving seconds off page loads or designing systems that scale across teams.
-          </p>
-        </div>
-        <div class="achievements">
-          <h3>Highlights</h3>
-          <div class="cards">
-            {#each achievements as item}
-              <article class="card">
-                <h4>{item.title}</h4>
-                <p>{item.description}</p>
-              </article>
-            {/each}
-          </div>
+  <div class="hero-detail container">
+    <div class="grid">
+      <div class="intro">
+        <p>
+          Over the past 7+ years I’ve worked across the full product lifecycle — from enterprise
+          internal portals at Pertamina to high-traffic e-commerce frontends at Blibli.com. I care
+          about rendering strategy, micro-frontend boundaries, deployment pipelines, and production
+          observability.
+        </p>
+        <p>
+          My master’s research in computer vision and deep learning taught me to approach complex
+          problems methodically, and I bring that same mindset to frontend architecture: whether
+          it’s shaving seconds off page loads or designing systems that scale across teams.
+        </p>
+      </div>
+      <div class="achievements">
+        <h3>Highlights</h3>
+        <div class="cards">
+          {#each achievements as item}
+            <article class="card">
+              <h4>{item.title}</h4>
+              <p>{item.description}</p>
+            </article>
+          {/each}
         </div>
       </div>
     </div>
@@ -181,15 +178,9 @@
     color: var(--accent);
   }
 
-  .about-panel {
-    padding: 5rem 0;
-    background: var(--surface);
-    border-block: 1px solid var(--border);
-  }
-
-  h2 {
-    font-size: 2rem;
-    margin: 0 0 2rem;
+  .hero-detail {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
   }
 
   h3 {
@@ -250,10 +241,6 @@
 
     .container {
       padding-inline: 1.25rem;
-    }
-
-    .about-panel {
-      padding: 3.5rem 0;
     }
 
     .grid {
