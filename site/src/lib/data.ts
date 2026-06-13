@@ -207,6 +207,12 @@ export const achievements: Achievement[] = [
     href: 'https://www.researchgate.net/publication/376166986_DEEP_LEARNING_WITH_AUXILIARY_LEARNING_ATTENTION_MECHANISM_FOR_OIL_PALM_FRUIT_IMAGE_RIPENESS_CLASSIFICATION',
   },
   {
+    title: 'Blitalk Speaker 2021',
+    description:
+      'Presented "Functional Vue with Composition and TypeScript" at Blitalk 2021.',
+    bullets: [],
+  },
+  {
     title: 'Enterprise CMS',
     description: 'Led a CMS project for an internal company portal.',
     bullets: [
