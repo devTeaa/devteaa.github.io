@@ -162,6 +162,7 @@ export const skillGroups: SkillGroup[] = [
       'PostgreSQL',
       'Prisma ORM',
       'JWT',
+      'Role-Based Access Control',
       'Database Optimization',
     ],
   },
