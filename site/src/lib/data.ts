@@ -218,6 +218,17 @@ export const achievements: Achievement[] = [
     ],
   },
   {
+    title: 'OpenAPI Type Generation',
+    description:
+      'Built an open-source CLI tool that generates TypeScript types from OpenAPI specs, keeping frontend and backend type definitions in sync.',
+    bullets: [
+      'Automated type generation from OpenAPI specifications.',
+      'Eliminates manual type drift between frontend and backend APIs.',
+      'Installable and configurable as part of existing CI/CD workflows.',
+    ],
+    href: 'https://github.com/devTeaa/codegen-openapi-ts',
+  },
+  {
     title: 'Enterprise CMS',
     description: 'Led a CMS project for an internal company portal.',
     bullets: [
