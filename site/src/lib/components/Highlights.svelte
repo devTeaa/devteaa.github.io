@@ -7,7 +7,7 @@
     <h2>Highlights</h2>
     <div class="items">
       {#each achievements as item}
-        <article class="item">
+        <article class="item" class:no-bullets={item.bullets.length === 0}>
           <div class="lead">
             <h3>{item.title}</h3>
             <p class="description">{item.description}</p>
@@ -57,6 +57,10 @@
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 1.5rem;
+  }
+
+  .item.no-bullets {
+    grid-template-columns: 1fr;
   }
 
   .lead {

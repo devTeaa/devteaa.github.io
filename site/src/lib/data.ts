@@ -191,12 +191,8 @@ export const achievements: Achievement[] = [
   {
     title: 'Custom SSR Framework',
     description:
-      'Built the SSR rendering layer that powers Blibli.com\'s micro-frontend platform.',
-    bullets: [
-      'Custom Node.js SSR framework enabling SSR, ISR, and PPR rendering strategies.',
-      'Supports the existing micro-frontend architecture without replacing it.',
-      'Overcame limitations of existing meta-frameworks to improve web performance.',
-    ],
+      `It's a plugin based system where it can be installed and setup using ai agent skills into existing vue csr project, so no rewrite is required. It can also support rendering both vue 2 and vue 3 at the same time incase the project is on progress of migration. There is no implementation code on the project, the project only declare the configs and the library can pick it up and setup the express / ssr automatically. This helps team adopt the ssr library easier, and progressively. It's also efficient in resource as there is no rendering with vue executed during request, it's using ISR for static page, PPR for dynamic page, and now support island architecture like Astro to remove unused chunk for static components.`,
+    bullets: [],
   },
   {
     title: 'Published Deep Learning Research',
