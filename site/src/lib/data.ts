@@ -96,6 +96,9 @@ export const experiences: Job[] = [
       'Analytics for seller performance.',
       'Seller page banner and layout.',
       'Official Store seller registration and approval.',
+      'Presented "Functional Vue with Composition and TypeScript" at Blitalk 2021.',
+      'Migrated the Official Store frontend from Vue 2 to Vue 3.',
+      'Collaborated with cross-functional teams to deliver end-to-end features.',
     ],
   },
   {
