@@ -209,8 +209,13 @@ export const achievements: Achievement[] = [
   {
     title: 'Blitalk Speaker 2021',
     description:
-      'Presented "Functional Vue with Composition and TypeScript" at Blitalk 2021.',
-    bullets: [],
+      'Presented "Functional Vue with Composition and TypeScript" at Blitalk 2021, sharing how Blibli.com migrated from Vue Options API / mixins to the Composition API.',
+    bullets: [
+      'The problems mixins introduce in large codebases.',
+      'Migrating from Options API to Composition API incrementally.',
+      'Running both patterns side by side without slowing down feature development.',
+      'Practical examples comparing Composition API vs mixins.',
+    ],
   },
   {
     title: 'Enterprise CMS',
