@@ -9,7 +9,13 @@
       {#each achievements as item}
         <article class="item" class:no-bullets={item.bullets.length === 0}>
           <div class="lead">
-            <h3>{item.title}</h3>
+            {#if item.href}
+              <h3>
+                <a href={item.href} target="_blank" rel="noreferrer">{item.title}</a>
+              </h3>
+            {:else}
+              <h3>{item.title}</h3>
+            {/if}
             <p class="description">{item.description}</p>
           </div>
           {#if item.bullets.length}
@@ -73,6 +79,15 @@
     font-size: 1.1rem;
     margin: 0;
     color: var(--accent);
+  }
+
+  h3 a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h3 a:hover {
+    text-decoration: underline;
   }
 
   .description {

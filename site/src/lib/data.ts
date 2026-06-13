@@ -37,6 +37,7 @@ export interface Achievement {
   title: string;
   description: string;
   bullets: string[];
+  href?: string;
 }
 
 export const profile = {
@@ -203,6 +204,7 @@ export const achievements: Achievement[] = [
       'Achieved 87% accuracy on a 7-class oil palm Fresh Fruit Bunch dataset, improving over the base DenseNet.',
       'Published in ICIC Express Letters, Vol. 17, No. 12, December 2023 (DOI: 10.24507/icicel.17.12.1303).',
     ],
+    href: 'https://www.researchgate.net/publication/376166986_DEEP_LEARNING_WITH_AUXILIARY_LEARNING_ATTENTION_MECHANISM_FOR_OIL_PALM_FRUIT_IMAGE_RIPENESS_CLASSIFICATION',
   },
   {
     title: 'Enterprise CMS',
