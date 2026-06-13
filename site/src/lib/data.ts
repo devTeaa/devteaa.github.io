@@ -224,7 +224,6 @@ export const achievements: Achievement[] = [
     bullets: [
       'Automated type generation from OpenAPI specifications.',
       'Eliminates manual type drift between frontend and backend APIs.',
-      'Installable and configurable as part of existing CI/CD workflows.',
     ],
     href: 'https://github.com/devTeaa/codegen-openapi-ts',
   },
