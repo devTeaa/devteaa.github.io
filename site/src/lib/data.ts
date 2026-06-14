@@ -42,6 +42,13 @@ export interface Achievement {
   href?: string;
 }
 
+export interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  links?: { label: string; href: string }[];
+}
+
 export const profile = {
   name: 'Herman',
   title: 'Software Design Engineer',
@@ -131,6 +138,49 @@ export const experiences: Job[] = [
       'Installed, configured, and maintained computer systems, printers, and network infrastructure.',
       'Troubleshot technical issues and delivered user training to improve operational uptime.',
     ],
+  },
+];
+
+export const projects: Project[] = [
+  {
+    title: 'Wishywashy',
+    description:
+      'A full-stack laundry POS and management dashboard for tracking orders, customers, payments, and reports.',
+    tech: [
+      'React',
+      'TypeScript',
+      'Redux',
+      'Bulma',
+      'Node.js',
+      'Express',
+      'Sequelize',
+      'PostgreSQL',
+    ],
+    links: [
+      { label: 'Frontend', href: 'https://github.com/devTeaa/wishywashy' },
+      { label: 'Backend', href: 'https://gitlab.com/smartass-dev/wishywashy-server' },
+    ],
+  },
+  {
+    title: 'Bikedealer',
+    description:
+      'A motorbike dealer management app for sales, installments, pawn tracking, and payment records.',
+    tech: ['React', 'Bulma', 'GraphQL', 'jspdf'],
+    links: [{ label: 'GitHub', href: 'https://github.com/devTeaa/bikedealer' }],
+  },
+  {
+    title: 'Cipondo Powerindo',
+    description:
+      'A heavy equipment rental management system with scheduling, stock tracking, and rental history.',
+    tech: ['Nuxt 3', 'Vue 3', 'TypeScript', 'Prisma', 'Pinia'],
+    links: [{ label: 'GitHub', href: 'https://github.com/devTeaa/cipondo-powerindo' }],
+  },
+  {
+    title: 'codegen-openapi-ts',
+    description:
+      'An open-source TypeScript client generator from OpenAPI specifications, keeping frontend and backend types in sync.',
+    tech: ['TypeScript', 'Node.js', 'Rollup', 'Jest', 'Handlebars'],
+    links: [{ label: 'GitHub', href: 'https://github.com/devTeaa/codegen-openapi-ts' }],
   },
 ];
 
