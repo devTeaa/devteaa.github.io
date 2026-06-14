@@ -157,52 +157,65 @@ export const educations: Education[] = [
 
 export const skillGroups: SkillGroup[] = [
   {
-    name: 'Frontend',
+    name: 'Frontend & Architecture',
     skills: [
       'Vue.js',
-      'React',
       'Svelte',
-      'Nuxt',
+      'React',
       'TypeScript',
       'JavaScript (ES6+)',
       'HTML5',
       'CSS3',
-      'Micro-frontends',
-      'Playwright',
+      'Micro-frontend SSR',
+      'Nuxt',
+      'Core Web Vitals Optimization',
     ],
   },
   {
     name: 'Backend & Data',
     skills: [
       'Node.js',
+      'Bun',
       'ASP.NET MVC',
       '.NET Framework',
       'Entity Framework',
-      'Prisma ORM',
       'SQL',
+      'PostgreSQL',
+      'Prisma ORM',
+      'JWT',
+      'Role-Based Access Control',
+      'Database Optimization',
     ],
   },
   {
-    name: 'DevOps & Infra',
+    name: 'DevOps & Platform',
     skills: [
       'Jenkins',
-      'CI/CD',
+      'CI/CD Pipelines',
       'Datadog',
       'Distributed Tracing',
       'NGINX',
-      'API Gateway',
+      'API Gateway Configuration',
       'Google Cloud Platform',
     ],
   },
   {
-    name: 'ML & Research',
+    name: 'Machine Learning',
     skills: [
-      'Python',
-      'PyTorch',
       'Computer Vision',
       'Deep Learning',
-      'Visual Attention',
+      'Visual Attention Mechanisms',
+      'Python',
+      'PyTorch',
     ],
+  },
+  {
+    name: 'Testing & Tools',
+    skills: ['Vite', 'Jest', 'Unit Testing', 'Integration Testing', 'Playwright'],
+  },
+  {
+    name: 'Development Tools',
+    skills: ['GitHub', 'Stash', 'Bitbucket', 'Figma', 'Jira', 'Confluence'],
   },
 ];
 
