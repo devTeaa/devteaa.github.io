@@ -143,6 +143,18 @@ export const experiences: Job[] = [
 
 export const projects: Project[] = [
   {
+    title: 'Warteg Modern',
+    description:
+      'A role-based restaurant POS interface where admins manage categories, tables, menus, and staff; staff create and update orders by table; and cashiers view active invoices and print thermal receipts. Built as a Create React App SPA with Redux, React Router, and Bulma, communicating via GraphQL with role-gated views.',
+    tech: ['React', 'Redux', 'GraphQL', 'React Router', 'Bulma', 'jsPDF'],
+  },
+  {
+    title: 'Warteg Server',
+    description:
+      'The backend for Warteg Modern, an Express server exposing a single GraphQL API with JWT-based auth, bcrypt password hashing, and raw PostgreSQL queries with per-request transactions. It handles menu image uploads to AWS S3 and supports role-based access for admin, cashier, and staff workflows.',
+    tech: ['Node.js', 'Express', 'GraphQL', 'PostgreSQL', 'AWS S3', 'JWT', 'bcrypt'],
+  },
+  {
     title: 'Wishywashy',
     description:
       'A laundry POS and management system where staff create invoices, manage customers, services, deposits, and print receipts, while admins view reports and dashboards. The React frontend uses Redux and React Router, backed by an Express/Sequelize REST API and PostgreSQL.',
