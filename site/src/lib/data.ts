@@ -179,14 +179,21 @@ export const projects: Project[] = [
   {
     title: 'Warteg Modern',
     description:
-      'A role-based restaurant POS interface where admins manage categories, tables, menus, and staff; staff create and update orders by table; and cashiers view active invoices and print thermal receipts. Built as a Create React App SPA with Redux, React Router, and Bulma, communicating via GraphQL with role-gated views.',
-    tech: ['React', 'Redux', 'GraphQL', 'React Router', 'Bulma', 'jsPDF'],
-  },
-  {
-    title: 'Warteg Server',
-    description:
-      'The backend for Warteg Modern, an Express server exposing a single GraphQL API with JWT-based auth, bcrypt password hashing, and raw PostgreSQL queries with per-request transactions. It handles menu image uploads to AWS S3 and supports role-based access for admin, cashier, and staff workflows.',
-    tech: ['Node.js', 'Express', 'GraphQL', 'PostgreSQL', 'AWS S3', 'JWT', 'bcrypt'],
+      'A role-based restaurant POS with a React frontend and an Express/GraphQL backend. Admins manage categories, tables, menus, and staff; staff create and update orders by table; cashiers view active invoices and print thermal receipts. The SPA uses Redux, React Router, and Bulma, while the backend uses raw PostgreSQL queries with per-request transactions, JWT auth, bcrypt hashing, and AWS S3 for menu images.',
+    tech: [
+      'React',
+      'Redux',
+      'GraphQL',
+      'React Router',
+      'Bulma',
+      'jsPDF',
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'AWS S3',
+      'JWT',
+      'bcrypt',
+    ],
   },
 ];
 
