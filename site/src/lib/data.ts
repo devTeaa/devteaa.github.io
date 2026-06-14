@@ -166,7 +166,7 @@ export const projects: Project[] = [
   {
     title: 'Cipondo Powerindo',
     description:
-      'An internal ERP for a heavy-equipment company tracking equipment units through buying, renting, selling, maintenance, and spare-parts inventory across locations. Built with Nuxt 3 (client-rendered), Vue 3 Composition API, Pinia auth, and a Nitro/Prisma/PostgreSQL backend.',
+      'An internal ERP for a heavy-equipment company tracking equipment units through buying, renting, selling, maintenance, and spare-parts inventory across locations. It includes a role-based access design where lower roles handle rental workflows and higher roles manage master data and transactions. Built with Nuxt 3 (client-rendered), Vue 3 Composition API, Pinia auth, and a Nitro/Prisma/PostgreSQL backend.',
     tech: ['Nuxt 3', 'Vue 3', 'TypeScript', 'Prisma', 'Pinia'],
   },
   {
