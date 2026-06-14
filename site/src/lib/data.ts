@@ -110,11 +110,12 @@ export const experiences: Job[] = [
     location: 'Jakarta, Indonesia',
     period: 'Jun 2018 - Aug 2019',
     type: 'Software House',
-    roles: [{ title: 'Junior Web Developer', period: 'Jun 2018 - Aug 2019' }],
+    roles: [{ title: 'Junior Software Programmer', period: 'Jun 2018 - Aug 2019' }],
     highlights: [
       'Architected and developed enterprise internal portal solutions for Pertamina using ASP.NET MVC and .NET Framework.',
       'Implemented dynamic rendering architecture combining server-rendered shell templates with vanilla JavaScript DOM interactions.',
       'Built backend business logic using .NET Framework and Entity Framework, including DTO generation and database schema maintenance.',
+      'Optimized stored procedures for heavy read-query workloads, reducing the Pertamina dashboard load time from 3 minutes to 14 seconds (97% improvement).',
       'Contributed to Indonesia gas station standardization and certification systems with cross-functional teams.',
       'Led a CMS project for the internal company portal, delivering features such as news management, project dashboards, event calendars, secure file sharing with session-based watermarking, org hierarchy visualization, and media file explorer, enabling non-technical teams to manage content independently.',
     ],
@@ -137,7 +138,7 @@ export const educations: Education[] = [
   {
     school: 'Universitas Bina Nusantara',
     location: 'Jakarta, Indonesia',
-    period: '2018 - Dec 2020',
+    period: 'Jul 2018 - Dec 2019',
     degree: 'Master of Computer Science',
     gpa: '3.60/4.00',
     thesis:
@@ -147,7 +148,7 @@ export const educations: Education[] = [
   {
     school: 'Sekolah Tinggi Teknologi Indonesia',
     location: 'Tanjungpinang, Indonesia',
-    period: '2014 - 2017',
+    period: 'Jul 2014 - Dec 2017',
     degree: 'Bachelor of Computer Science',
     gpa: '3.33/4.00',
     thesis:
