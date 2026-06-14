@@ -145,7 +145,7 @@ export const projects: Project[] = [
   {
     title: 'Wishywashy',
     description:
-      'A full-stack laundry POS and management dashboard for tracking orders, customers, payments, and reports.',
+      'A laundry POS and management system where staff create invoices, manage customers, services, deposits, and print receipts, while admins view reports and dashboards. The React frontend uses Redux and React Router, backed by an Express/Sequelize REST API and PostgreSQL.',
     tech: [
       'React',
       'TypeScript',
@@ -156,29 +156,23 @@ export const projects: Project[] = [
       'Sequelize',
       'PostgreSQL',
     ],
-    links: [
-      { label: 'Frontend', href: 'https://github.com/devTeaa/wishywashy' },
-      { label: 'Backend', href: 'https://gitlab.com/smartass-dev/wishywashy-server' },
-    ],
   },
   {
     title: 'Bikedealer',
     description:
-      'A motorbike dealer management app for sales, installments, pawn tracking, and payment records.',
+      'A back-office dashboard for a motorcycle dealership handling installment sales, monthly payments, pawn transactions, spending, due/overdue tracking, and PDF invoice printing. Built as a React SPA with class components, GraphQL data fetching, and Bulma styling.',
     tech: ['React', 'Bulma', 'GraphQL', 'jspdf'],
-    links: [{ label: 'GitHub', href: 'https://github.com/devTeaa/bikedealer' }],
   },
   {
     title: 'Cipondo Powerindo',
     description:
-      'A heavy equipment rental management system with scheduling, stock tracking, and rental history.',
+      'An internal ERP for a heavy-equipment company tracking equipment units through buying, renting, selling, maintenance, and spare-parts inventory across locations. Built with Nuxt 3 (client-rendered), Vue 3 Composition API, Pinia auth, and a Nitro/Prisma/PostgreSQL backend.',
     tech: ['Nuxt 3', 'Vue 3', 'TypeScript', 'Prisma', 'Pinia'],
-    links: [{ label: 'GitHub', href: 'https://github.com/devTeaa/cipondo-powerindo' }],
   },
   {
     title: 'codegen-openapi-ts',
     description:
-      'An open-source TypeScript client generator from OpenAPI specifications, keeping frontend and backend types in sync.',
+      'An open-source Node.js library and CLI that generates TypeScript API clients from OpenAPI/Swagger specs. It parses OpenAPI v2/v3, uses Handlebars templates for code generation, and is bundled with Rollup with Jest tests.',
     tech: ['TypeScript', 'Node.js', 'Rollup', 'Jest', 'Handlebars'],
     links: [{ label: 'GitHub', href: 'https://github.com/devTeaa/codegen-openapi-ts' }],
   },
