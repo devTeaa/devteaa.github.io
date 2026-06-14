@@ -143,16 +143,17 @@ export const experiences: Job[] = [
 
 export const projects: Project[] = [
   {
-    title: 'Warteg Modern',
+    title: 'codegen-openapi-ts',
     description:
-      'A role-based restaurant POS interface where admins manage categories, tables, menus, and staff; staff create and update orders by table; and cashiers view active invoices and print thermal receipts. Built as a Create React App SPA with Redux, React Router, and Bulma, communicating via GraphQL with role-gated views.',
-    tech: ['React', 'Redux', 'GraphQL', 'React Router', 'Bulma', 'jsPDF'],
+      'An open-source Node.js library and CLI that generates TypeScript API clients from OpenAPI/Swagger specs. It parses OpenAPI v2/v3, uses Handlebars templates for code generation, and is bundled with Rollup with Jest tests.',
+    tech: ['TypeScript', 'Node.js', 'Rollup', 'Jest', 'Handlebars'],
+    links: [{ label: 'GitHub', href: 'https://github.com/devTeaa/codegen-openapi-ts' }],
   },
   {
-    title: 'Warteg Server',
+    title: 'Cipondo Powerindo',
     description:
-      'The backend for Warteg Modern, an Express server exposing a single GraphQL API with JWT-based auth, bcrypt password hashing, and raw PostgreSQL queries with per-request transactions. It handles menu image uploads to AWS S3 and supports role-based access for admin, cashier, and staff workflows.',
-    tech: ['Node.js', 'Express', 'GraphQL', 'PostgreSQL', 'AWS S3', 'JWT', 'bcrypt'],
+      'An internal ERP for a heavy-equipment company tracking equipment units through buying, renting, selling, maintenance, and spare-parts inventory across locations. It includes a role-based access design where lower roles handle rental workflows and higher roles manage master data and transactions. Built with Nuxt 3 (client-rendered), Vue 3 Composition API, Pinia auth, and a Nitro/Prisma/PostgreSQL backend.',
+    tech: ['Nuxt 3', 'Vue 3', 'TypeScript', 'Prisma', 'Pinia', 'JWT'],
   },
   {
     title: 'Wishywashy',
@@ -176,17 +177,16 @@ export const projects: Project[] = [
     tech: ['React', 'Bulma', 'GraphQL', 'jspdf'],
   },
   {
-    title: 'Cipondo Powerindo',
+    title: 'Warteg Modern',
     description:
-      'An internal ERP for a heavy-equipment company tracking equipment units through buying, renting, selling, maintenance, and spare-parts inventory across locations. It includes a role-based access design where lower roles handle rental workflows and higher roles manage master data and transactions. Built with Nuxt 3 (client-rendered), Vue 3 Composition API, Pinia auth, and a Nitro/Prisma/PostgreSQL backend.',
-    tech: ['Nuxt 3', 'Vue 3', 'TypeScript', 'Prisma', 'Pinia', 'JWT'],
+      'A role-based restaurant POS interface where admins manage categories, tables, menus, and staff; staff create and update orders by table; and cashiers view active invoices and print thermal receipts. Built as a Create React App SPA with Redux, React Router, and Bulma, communicating via GraphQL with role-gated views.',
+    tech: ['React', 'Redux', 'GraphQL', 'React Router', 'Bulma', 'jsPDF'],
   },
   {
-    title: 'codegen-openapi-ts',
+    title: 'Warteg Server',
     description:
-      'An open-source Node.js library and CLI that generates TypeScript API clients from OpenAPI/Swagger specs. It parses OpenAPI v2/v3, uses Handlebars templates for code generation, and is bundled with Rollup with Jest tests.',
-    tech: ['TypeScript', 'Node.js', 'Rollup', 'Jest', 'Handlebars'],
-    links: [{ label: 'GitHub', href: 'https://github.com/devTeaa/codegen-openapi-ts' }],
+      'The backend for Warteg Modern, an Express server exposing a single GraphQL API with JWT-based auth, bcrypt password hashing, and raw PostgreSQL queries with per-request transactions. It handles menu image uploads to AWS S3 and supports role-based access for admin, cashier, and staff workflows.',
+    tech: ['Node.js', 'Express', 'GraphQL', 'PostgreSQL', 'AWS S3', 'JWT', 'bcrypt'],
   },
 ];
 
