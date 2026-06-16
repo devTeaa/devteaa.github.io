@@ -63,6 +63,7 @@
     font-size: 0.9rem;
     font-weight: 500;
     transition: border-color 0.2s, color 0.2s;
+    cursor: default;
   }
 
   .tag:hover {

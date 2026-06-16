@@ -93,6 +93,7 @@
     font-size: 0.85rem;
     padding: 0.3rem 0.7rem;
     border-radius: 999px;
+    cursor: default;
   }
 
   .links {

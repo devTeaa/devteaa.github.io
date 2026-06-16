@@ -85,10 +85,12 @@ export const experiences: Job[] = [
     ],
     highlights: [
       'Architected a custom Node.js SSR framework that supports Blibli.com\'s micro-frontend architecture, enabling SSR, ISR, and PPR rendering strategies to overcome the limitations of existing meta-frameworks and improve web performance.',
+      'Improved mobile LCP from 76.5s to 7.3s on product pages and homepage mobile visually complete from 13.5s to 2.7s; outperformed Nuxt by 5.9x RPS with 6x lower stable memory usage.',
       'Maintained and enhanced Jenkins CI/CD pipelines, centralising frontend stack upgrades, dependency maintenance, and deployment workflows.',
       'Configured Nginx API gateways and routing strategies in collaboration with cross-functional engineering teams.',
-      'Developed internal engineering tools and led knowledge-sharing sessions to improve team productivity.',
-      'Built monitoring dashboards and distributed tracing for the micro-frontend SSR layer using Datadog.'
+      'Developed internal engineering tools and led knowledge-sharing sessions to mentor developers and improve team productivity.',
+      'Built monitoring dashboards and distributed tracing for the micro-frontend SSR layer using Datadog.',
+      'Worked with Docker, Kubernetes, Helm, and Argo CD to deploy and manage containerised frontend services.'
     ],
   },
   {
@@ -102,14 +104,13 @@ export const experiences: Job[] = [
       { title: 'Associate Software Design Engineer (Official Store)', period: 'Sep 2019 - Aug 2021' },
     ],
     highlights: [
+      'Led the Official Store frontend migration from Vue 2 to Vue 3, enabling both patterns to run side by side without slowing down feature development.',
+      'Integrated TypeScript types between frontend and backend using OpenAPI specs, reducing API contract mismatches and improving type safety across the stack.',
       'Built analytics dashboards to help sellers track and improve performance.',
-      'Designed and implemented seller page banner and layout customization features.',
+      'Implemented seller page banner and layout customization features for personalised storefront experiences.',
       'Developed the Official Store seller registration and approval workflow.',
       'Built a broadcast messaging system for seller promotions and campaigns.',
-      'Integrated TypeScript types between frontend and backend using OpenAPI specs, reducing API contract mismatches.',
-      'Presented "Functional Vue with Composition and TypeScript" at Blitalk 2021, sharing Vue 2→3 migration practices.',
-      'Led the Official Store frontend migration from Vue 2 to Vue 3.',
-      'Collaborated with cross-functional teams to deliver end-to-end seller-facing features.',
+      'Presented "Functional Vue with Composition and TypeScript" at Blitalk 2021, sharing migration practices and mentoring internal teams.',
     ],
   },
   {
@@ -225,14 +226,18 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       'Vue.js',
       'Svelte',
-      'React',
       'TypeScript',
       'JavaScript (ES6+)',
+      'React',
+      'Redux',
+      'React Context',
       'HTML5',
       'CSS3',
       'Micro-frontend SSR',
       'Nuxt',
       'Core Web Vitals Optimization',
+      'Webpack',
+      'Vite',
     ],
   },
   {
@@ -240,12 +245,19 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       'Node.js',
       'Bun',
+      'Python',
+      'Java',
+      'GraphQL',
+      'RESTful APIs',
+      'Axios',
+      'fetch',
       'ASP.NET MVC',
       '.NET Framework',
       'Entity Framework',
       'SQL',
       'PostgreSQL',
       'Prisma ORM',
+      'MongoDB',
       'JWT',
       'Role-Based Access Control',
       'Database Optimization',
@@ -254,6 +266,10 @@ export const skillGroups: SkillGroup[] = [
   {
     name: 'DevOps & Platform',
     skills: [
+      'Docker',
+      'Kubernetes',
+      'Helm',
+      'Argo CD',
       'Jenkins',
       'CI/CD Pipelines',
       'Datadog',
@@ -261,6 +277,8 @@ export const skillGroups: SkillGroup[] = [
       'NGINX',
       'API Gateway Configuration',
       'Google Cloud Platform',
+      'AWS S3',
+      'Azure',
     ],
   },
   {
@@ -275,7 +293,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     name: 'Testing & Tools',
-    skills: ['Vite', 'Jest', 'Unit Testing', 'Integration Testing', 'Playwright'],
+    skills: ['Jest', 'Playwright', 'Vitest', 'Unit Testing', 'Integration Testing'],
   },
   {
     name: 'Development Tools',
