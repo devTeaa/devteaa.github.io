@@ -299,6 +299,19 @@ export const skillGroups: SkillGroup[] = [
     name: 'Development Tools',
     skills: ['GitHub', 'Stash', 'Bitbucket', 'Figma', 'Jira', 'Confluence'],
   },
+  {
+    name: 'AI-Assisted Development',
+    skills: [
+      'Cursor',
+      'GitHub Copilot',
+      'ChatGPT',
+      'Claude CLI',
+      'Kimi',
+      'Agentic programming',
+      'AI-assisted debugging',
+      'AI-assisted code review',
+    ],
+  },
 ];
 
 export const achievements: Achievement[] = [
