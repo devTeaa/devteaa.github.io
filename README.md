@@ -1,23 +1,27 @@
 # Herman's Portfolio
 
-A personal portfolio website built with **Svelte**, **TypeScript**, and **Vite**, generated from the contents of `Herman-2026-ATS.pdf`.
+A personal portfolio website built with **SvelteKit**, **TypeScript**, and **Vite**, generated from the contents of `Herman-2026-ATS.pdf`.
 
 ## Project structure
 
 ```
 .
 ├── Herman-2026-ATS.pdf      # Source CV
-├── site/                      # Svelte portfolio website
+├── site/                      # SvelteKit portfolio website
 │   ├── src/
 │   │   ├── lib/
 │   │   │   ├── data.ts              # CV data model
 │   │   │   └── components/          # Svelte components
-│   │   ├── App.svelte
+│   │   ├── routes/
+│   │   │   ├── +layout.svelte       # Root layout (header/footer/global styles)
+│   │   │   ├── +layout.ts           # Prerender configuration
+│   │   │   └── +page.svelte         # Home page
 │   │   ├── app.css
-│   │   └── main.ts
-│   ├── public/Herman-2026-ATS.pdf   # Downloadable CV
-│   └── dist/                        # Production build
-└── .gitignore
+│   │   └── app.html
+│   ├── static/
+│   │   └── Herman-2026-ATS.pdf      # Downloadable CV
+│   └── build/                       # Static production build
+└── .github/workflows/deploy.yml     # GitHub Pages deployment
 ```
 
 ## Getting started
@@ -26,10 +30,11 @@ A personal portfolio website built with **Svelte**, **TypeScript**, and **Vite**
 cd site
 npm install
 npm run dev       # Start dev server
-npm run build     # Build for production
+npm run build     # Build static site
 npm run preview   # Preview production build
+npm run check     # Type-check Svelte/TypeScript
 ```
 
 ## Deployment
 
-The `site/dist` folder contains the static production build. You can deploy it to any static host (GitHub Pages, Vercel, Netlify, Cloudflare Pages, etc.).
+The `site/build` folder contains the static production build. The included GitHub Actions workflow deploys it to GitHub Pages automatically on pushes to `master`.
