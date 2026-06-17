@@ -51,7 +51,7 @@ export interface Project {
 
 export const profile = {
   name: 'Herman',
-  title: 'Senior Software Development Engineer',
+  title: 'Software Design Engineer',
   location: 'Jakarta, Indonesia',
   summary:
     "Senior Software Engineer with 7+ years building scalable frontend systems for high-traffic e-commerce platforms, specializing in TypeScript, Vue.js, and Node.js. I architected a custom Node.js SSR framework supporting micro-frontend architecture with SSR, ISR, and PPR rendering strategies, improving performance and SEO for critical shopping page experiences. Comfortable across the full stack with production experience in RESTful APIs, GraphQL, CI/CD, cloud infrastructure, and relational database design. Master's in Computer Science with published research in Deep Learning and Computer Vision. Experienced in leading technical migrations, mentoring teams through knowledge-sharing sessions, and driving cross-functional collaboration in agile environments. I also build open-source tooling including a TypeScript code generator from OpenAPI specs, and full-stack side projects using Vue, React, Redux, GraphQL, and Node.js. I leverage AI-assisted development tools (Cursor, Copilot, ChatGPT, Claude CLI, Kimi) and agentic programming to accelerate prototyping, refactor legacy code, and improve code review productivity.",
@@ -80,7 +80,8 @@ export const experiences: Job[] = [
     period: 'Sep 2023 - Present',
     type: 'E-commerce',
     roles: [
-      { title: 'Senior Software Development Engineer (RnD)', period: 'Sep 2023 - Present' },
+      { title: 'Software Design Engineer (RnD)', period: 'May 2026 - Present' },
+      { title: 'Senior Software Development Engineer (Rnd)', period: 'Sep 2023 - April 2026' },
     ],
     highlights: [
       'Architected a custom Node.js SSR framework supporting micro-frontend architecture with SSR, ISR, and PPR rendering strategies, improving performance and SEO for critical shopping page experiences.',
