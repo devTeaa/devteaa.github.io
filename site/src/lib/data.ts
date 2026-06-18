@@ -124,6 +124,21 @@ export const experiences: Job[] = [
     ],
   },
   {
+    company: 'Self Employed',
+    location: 'Jakarta, Indonesia',
+    period: '2019 - Present',
+    type: 'Self employed',
+    roles: [{ title: 'Independent Software Developer', period: '2019 - Present' }],
+    highlights: [
+      'Built and maintained multiple full-stack applications alongside full-time employment, including a restaurant POS, laundry management platform, motorcycle dealership dashboard, and heavy equipment ERP.',
+      'Developed Warteg Modern, a role-based restaurant POS with React, Redux, GraphQL, and PostgreSQL, featuring JWT authentication, AWS S3 image storage, and thermal receipt printing.',
+      'Created Wishywashy, a laundry POS and management system with React, Redux, and an Express/Sequelize REST API, supporting invoice creation, customer management, and receipt printing.',
+      'Built Bikedealer, a React SPA back-office for motorcycle installment sales using GraphQL, Bulma, and jsPDF for invoice generation.',
+      'Developed Cipondo Powerindo, a Nuxt 3/Vue 3 ERP for heavy equipment tracking with Pinia authentication, Nitro backend, and Prisma/PostgreSQL database.',
+      'Published codegen-openapi-ts, an open-source Node.js CLI library that generates TypeScript API clients from OpenAPI/Swagger specs using Handlebars templates and Rollup bundling.',
+    ],
+  },
+  {
     company: 'Kairos Utama Indonesia',
     location: 'Jakarta, Indonesia',
     period: 'Jun 2018 - Aug 2019',
